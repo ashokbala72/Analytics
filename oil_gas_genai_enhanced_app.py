@@ -54,14 +54,44 @@ tabs = st.tabs([
     '🔄 Compression Optimization', '📘 Compliance Planner'
 ])
 
-# -------------------------------
-# Tab 0 - Overview
-# -------------------------------
 with tabs[0]:
     st.markdown('''
     ## 🛢️ Oil & Gas GenAI Analytics Suite
 
-    This app combines **mock oilfield datasets** with **Azure OpenAI (gpt-4o-raj)** for smart, dataset-specific summaries and visualizations.
+    This app combines **mock oilfield datasets** with **Azure OpenAI (gpt-4o-raj)** for **dataset-specific summaries** and **interactive visualizations**.
+
+    ### 🔍 What Does This App Do?
+    - Presents synthetic multi-well production, drilling, completion, maintenance, and compliance data
+    - Uses GenAI to auto-summarize **actual dataset contents** (not generic text)
+    - Shows relevant graphs for every metric
+    - Demonstrates how multiple factors can be jointly analyzed to improve field outcomes
+
+    ### 📁 What Each Tab Represents (in simple terms):
+    - **🚜 Drilling Efficiency** → Which rocks and mud types allow faster, more efficient drilling?
+    - **📈 Lift Optimization** → What well interventions (ESP, PCP, rod pumps) improve production flow?
+    - **🌦 Weather Sensitivity** → How do storms, heatwaves, fog, or rain affect well output and safety risks?
+    - **💰 Netback Margin** → Which wells remain most profitable after accounting for price, transport, and costs?
+    - **🔧 Maintenance Prediction** → Which equipment (pumps, compressors, sensors) is most likely to fail soon?
+    - **💥 Frac Efficiency** → Which fracturing techniques (slickwater, gel, hybrid) deliver the best early results?
+    - **🧩 Completion Impact** → Do more frac stages really increase post-completion output?
+    - **👷 Human Factor** → Do crew assignments and shift hours affect downtime (NPT)?
+    - **⚠️ Risk Prediction** → Which incident types (H2S, spills, gas leaks, kicks) are more likely in current conditions?
+    - **🔄 Compression Optimization** → Are compressors properly sized relative to well gas output?
+    - **📘 Compliance Planner** → Are we at risk of breaching emissions, water disposal, or flare regulations?
+
+    ### 🧪 Real vs Simulated
+    - **All data here is mock** — structured like real field telemetry
+    - In production, data can connect to:
+      - SCADA / historian systems
+      - Daily drilling/production reports
+      - Weather APIs
+      - Emissions & regulatory logs
+
+    ### 🚀 Production Readiness
+    - Replace mock data with live API connectors
+    - Add secure login and operator-level filtering
+    - Enable background refresh & alerts for high-risk signals
+    - Export insights into BI tools, corporate dashboards, or PDF reports
     ''')
 
 # -------------------------------
